@@ -1,0 +1,10 @@
+version: '3'
+services:
+  phantomjs:
+    image: "kobabasu/alpine-sphinx:0.44"
+    container_name: "sphinx"
+    working_dir: "/app"
+    volumes:
+      - "/home/core/share:/app"
+    tty: true
+    stdin_open: true
